@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top_image_separation">200dp</dimen>
+    <dimen name="left_separation">20dp</dimen>
+    <dimen name="news_title_text_size">20dp</dimen>
+</resources>

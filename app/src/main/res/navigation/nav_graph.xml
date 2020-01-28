@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/listingFragment">
+
+    <fragment
+        android:id="@+id/listingFragment"
+        android:name="com.sample.newsapp.view.BaseListFragment"
+        android:label="ListingFragment"
+        tools:layout="@layout/fragment_base_listing">
+
+        <action
+            android:id="@+id/click_detail_action"
+            app:destination="@+id/detailFragment">
+            <argument
+                android:name="newsEntity"
+                android:defaultValue="@null"
+                app:argType="java.io.Serializable"
+                app:nullable="true" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.sample.newsapp.view.NewsDetailWebFragment"
+        android:label="Detail Fragment">
+
+        <action
+            android:id="@+id/back"
+            app:destination="@+id/listingFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+</navigation>
