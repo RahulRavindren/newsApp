@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/white</color>
+    <color name="colorPrimaryDark">@android:color/black</color>
+    <color name="colorAccent">@android:color/white</color>
+    <color name="news_source_text_color">#4D4D4E</color>
+    <color name="listing_bg_color">#e1e1e1</color>
+    <color name="news_pos_indicator_color">#1F9EE1</color>
+</resources>
